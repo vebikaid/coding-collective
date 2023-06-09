@@ -20,7 +20,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/deposit',[Controller::class, 'thirdparty']);
-
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
